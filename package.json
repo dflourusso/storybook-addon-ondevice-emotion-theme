@@ -1,13 +1,13 @@
 {
-  "name": "storybook-addon-ondevice-styled-theme",
+  "name": "storybook-addon-ondevice-emotion-theme",
   "version": "0.0.1",
-  "description": "A react-native storybook addon to use themes with styled-components",
+  "description": "A react-native storybook addon to use themes with emotion",
   "keywords": [
     "addon",
     "theme",
     "react",
     "react-native",
-    "styled-components",
+    "emotion",
     "storybook"
   ],
   "scripts": {
@@ -15,12 +15,9 @@
   },
   "license": "MIT",
   "main": "dist/index.js",
-  "bugs": {
-    "url": "https://github.com/h-des/storybook-addon-ondevice-styled-theme/issues"
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/h-des/storybook-addon-ondevice-styled-theme.git"
+    "url": "https://github.com/dflourusso/storybook-addon-ondevice-emotion-theme.git"
   },
   "publishConfig": {
     "access": "public"
@@ -29,7 +26,8 @@
     "@storybook/addons": "*",
     "react": "*",
     "react-native": "*",
-    "styled-components": "*"
+    "@emotion/native": "*",
+    "@emotion/react": "*"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",

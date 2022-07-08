@@ -1,11 +1,11 @@
-# storybook-addon-ondevice-styled-theme
+# storybook-addon-ondevice-emotion-theme
 
-Storybook-addon-ondevice-styled-theme for react-native can be used to provide themes to your components that are built with styled-components. You can choose between themes in `Themes` panel on your device. This addons wraps every story with `ThemeProvider` from `styled-components`.
+Storybook-addon-ondevice-emotion-theme for react-native can be used to provide themes to your components that are built with emotion. You can choose between themes in `Themes` panel on your device. This addons wraps every story with `ThemeProvider` from `@emotion/react`.
 
 ## Installation
 
 ```sh
-yarn add -D storybook-addon-ondevice-styled-theme
+yarn add -D storybook-addon-ondevice-emotion-theme
 ```
 
 ## Configuration
@@ -15,7 +15,7 @@ Create a file called `rn-addons.js` in your storybook config.
 Add following content to it:
 
 ```js
-import 'storybook-addon-ondevice-styled-theme/register'
+import 'storybook-addon-ondevice-emotion-theme/register'
 ```
 
 Then import `rn-addons.js` next to your `getStorybookUI` call.
@@ -30,7 +30,7 @@ import './rn-addons'
 import React from 'react'
 import { Text } from 'react-native'
 import { storiesOf, addDectorator } from '@storybook/react-native'
-import { withTheme } from 'storybook-addon-ondevice-styled-theme'
+import { withTheme } from 'storybook-addon-ondevice-emotion-theme'
 
 addDecorator(withTheme)
 
@@ -49,7 +49,7 @@ or globally in storybook.js
 ```js
 import React from 'react'
 import { addDecorator, addParameters } from '@storybook/react-native'
-import { withTheme } from 'storybook-addon-ondevice-styled-theme'
+import { withTheme } from 'storybook-addon-ondevice-emotion-theme'
 
 addDecorator(withTheme)
 

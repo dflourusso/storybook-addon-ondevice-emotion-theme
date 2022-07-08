@@ -1,6 +1,6 @@
 import React from 'react'
 import Events from './constants'
-import { ThemeProvider } from 'styled-components'
+import { ThemeProvider } from '@emotion/react'
 
 class Wrapper extends React.Component {
   constructor(props) {
